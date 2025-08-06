@@ -21,7 +21,7 @@
             <div class="user-menu">
                 <div class="user-dropdown" id="userDropdown">
                     <button class="user-toggle" id="userToggle">
-                        <span>Admin</span>
+                        <span>@(User?.Identity?.Name ?? "Admin")</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="user-dropdown-menu">
